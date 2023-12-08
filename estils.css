@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: url(Press_Start_2P/PressStart2P-Regular.ttf);
+}
+/* Esta Media Query de CSS hace que pueda utilizar la fuente descargada de 'PressStart2P' en mi página web. */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    #fondo-nav {
+        font-size: 8px;
+        padding: 5px 10px;
+      }
+    /* Esta media query cambia el tamaño de letra y el padding del <nav> para los dispositivos pequeños. */
+    main {
+        font-size: 8px;
+        padding: 5 10px;
+    }
+    /* Esta media query cambia el tamaño de letra y el padding del <main> para los dispositivos pequeños. */
+    .main-links {
+        width: 100%;
+        height: 80px;
+    }
+    /* Esta media query cambia el tamaño y la altura del <div> al fondo de mi <main> para los dispositivos pequeños. */
+    .Icons-RS img {
+        max-width: 30px;
+        max-height: 50px;
+    }
+    /* Esta media query cambia el tamaño de acho y alto a los iconos del <div> para los dispositivos pequeños. */
+    footer {
+        width: fit-content;
+        padding: 5px 10px;
+    }
+    /* Esta media query cambia el tamaño de acho y el padding al <footer> para los dispositivos pequeños. */
+    .foot-edit {
+        font-size: 4px;
+    }
+    /* Esta media query cambia el tamaño de funete al <footer> para los dispositivos pequeños. */
+    .P-Photos {
+        width: 80px;
+        height: 40px;
+    }
+    /* Esta media query cambia el tamaño de los <img> de Photos para los dispositivos pequeños. */
+}
+/* Esta Media Query de CSS hace que la página web sea Responsive para dispositivos pequeños. */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #fondo-nav {
+        font-size: 12px;
+        padding: 12px 18px;
+      }
+    /* Esta media query cambia el tamaño de letra y el padding del <nav> para los dispositivos medianos. */
+    main {
+        font-size: 12px;
+        padding: 12px 18px;
+    }
+    /* Esta media query cambia el tamaño de letra y el padding del <main> para los dispositivos medianos. */
+    .main-links {
+        width: 100%;
+        height: 120px;
+    }
+    /* Esta media query cambia el tamaño y la altura del <div> al fondo de mi <main> para los dispositivos medianos. */
+    .Icons-RS img {
+        max-width: 30px;
+        max-height: 50px;
+    }
+    /* Esta media query cambia el tamaño de acho y alto a los iconos del <div> para los dispositivos medianos. */
+    footer {
+        width: fit-content;
+        padding: 12px 18px;
+    }
+    /* Esta media query cambia el tamaño de acho y el padding al <footer> para los dispositivos medianos. */
+    .foot-edit {
+        font-size: 12px;
+    }
+    /* Esta media query cambia el tamaño de funete al <footer> para los dispositivos medianos. */
+    .P-Photos {
+        width: 120px;
+        height: 100px;
+    }
+    /* Esta media query cambia el tamaño de los <img> de Photos para los dispositivos medianos. */
+}
+/* Esta Media Query de CSS hace que la página web sea Responsive para dispositivos medianos. */
+#fuente-pagina {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Aqui aplico, en esta regla de CSS, la fuente de texto para toda la página (excepto el <nav>); además aplico un margin y padding 0 para tener una web completa. */
+#fondo-logo-Index {
+    margin: 0px;
+    background-color: #800000;
+    image-rendering: optimizeSpeed;
+}
+/* Esta regla de CSS con # del primer <div> de <header>, aplica el fondo al <img> con el logo de la página Index. Contiene un background color de rojo oscuro y le decimos que la renderización de la imagen favorezca la velocidad de la página. */
+#fondo-logo-History {
+    margin: 0px;
+    background-color: #000080;
+    image-rendering: optimizeSpeed;
+}
+/* Esta regla de CSS con # del primer <div> de <header>, aplica el fondo al <img> con el logo de la página History. Contiene un background color de azul oscuro y le decimos que la renderización de la imagen favorezca la velocidad de la página. */
+#fondo-logo-About {
+    margin: 0px;
+    background-color: #006400;
+    image-rendering: optimizeSpeed;
+}
+/* Esta regla de CSS con # del primer <div> de <header>, aplica el fondo al <img> con el logo de la página About. Contiene un background color de verde oscuro y le decimos que la renderización de la imagen favorezca la velocidad de la página. */
+#fondo-logo-Photos {
+    margin: 0px;
+    background-color: #B8860B;
+    image-rendering: optimizeSpeed;
+}
+/* Esta regla de CSS con # del primer <div> de <header>, aplica el fondo al <img> con el logo de la página Index. Contiene un background color de rojo oscuro y le decimos que la renderización de la imagen favorezca la velocidad de la página. */
+#fondo-logo-Playthrough {
+    margin: 0px;
+    background-color: #8B4513;
+    image-rendering: optimizeSpeed;
+}
+/* Esta regla de CSS con # del primer <div> de <header>, aplica el fondo al <img> con el logo de la página Playthrough. Contiene un background color de naranja oscuro y le decimos que la renderización de la imagen favorezca la velocidad de la página. */
+#fondo-logo-Contact {
+    margin: 0px;
+    background-color: #6A5ACD;
+    image-rendering: optimizeSpeed;
+}
+/* Esta regla de CSS con # del primer <div> de <header>, aplica el fondo al <img> con el logo de la página Contact. Contiene un background color de morado oscuro y le decimos que la renderización de la imagen favorezca la velocidad de la página. */
+#fondo-nav {
+    font-family: 'PressStart2P', Roboto, Arial, sans-serif;
+    font-size: 10px;
+    background-color: gray;
+    padding: 10px;
+}
+/* Esta regla de CSS aplica la fuente de texto al contenido del <nav>,además ajustamos el tamaño de texto a 10px, ponemos un padding también de 10px y un background-color de gris. */
+#fondo-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Aquí comenzamos con las difentes reglas de CSS para crear los falsos botones del <nav>. Primero vamos con el <ul> donde se dice que no hay una lista, no tiene ni padding ni margin y aplicamos un flex, con un wrap. */
+#fondo-nav li {
+    margin-right: 10px;
+    flex: 1;
+    margin-bottom: 10px;
+}
+/* Después seguimos con los <li>, donde le aplicamos un flex 1 para hacer el orden una lista horizontal, además aplicamos un margin, tanto a la derecha com al fondo de 10px. */
+#fondo-nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 18px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: grey;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+/* Para terminar, ponemos la regla de CSS para los <a> del <nav>, aquí haremos los cambios necesarios para crear el falso botón. Además he añadido un transition para crear una transición del color del botón con el color del :hover que haremos después. */
+#fondo-nav a.index:hover {
+    background-color: #800000;
+}
+/* Ahora crearemos las reglas de CSS con :hover para crear la transición que hemos hecho antes. Primero lo hermos con Index y el color es el mismo del fondo para el logo de la página. */
+#fondo-nav a.history:hover {
+    background-color: #000080;
+}
+/* Luego seguimos con History, que también tiene de color el del fondo para el logo de la página. */
+#fondo-nav a.about:hover {
+    background-color: #006400;
+}
+/* Ahora vamos con About, que también tiene de color el del fondo para el logo de la página. */
+#fondo-nav a.photos:hover {
+    background-color: #B8860B;
+}
+/* Seguimos con Photos, que también tiene de color el del fondo para el logo de la página. */
+#fondo-nav a.playthrough:hover {
+    background-color: #8B4513;
+}
+/* Después vamos con Playthrough, que también tiene de color el del fondo para el logo de la página. */
+#fondo-nav a.contact:hover {
+    background-color: #6A5ACD;;
+}
+/* Por último haremos el de Contact, que también tiene de color el del fondo para el logo de la página. */
+main {
+    position: relative;
+    background-color: grey;
+}
+/* Una vez hecho las reglas CSS de <body> y <header>, vamos con el <main> para todas las páginas. En el que dejamos con position relative y background-color gris para tener un fondo de emergencia y comenzar con nuestro fondo de pantalla para todas las páginas. */
+.main-gif {
+    position: relative;
+}
+/* Ahora asignamos al GIF o Fondo de página como relative para posicionarse en su respectivo lugar. */
+.main-gif img {
+    width: 100%;
+    height: auto;
+}
+/* Ahora configuramos la imagen para adaptarlo a la pantalla. */
+.main-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* Después, nos ponemos con la configuración del overlay que permitira tener el  contenido y el fondo separados. */
+.main-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+/* Ahora finalizamos con la caja con el respectivo contenido donde tendremos en position absolute, transform translate -50%, -50%; y z-index 1 para establecer el texto por encima de la imagen y del overlay. */
+.main-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+    z-index: 1;
+}
+/* Una vez coonfigurada la caja de contenido aplicamos casi lo mismo con la caja de links a redes sociales, que hara como un falso aside. */
+.main-links h3{
+    text-align: center;
+}
+/* Ahora configuramos el encabezado que tiene la página de contact. */
+footer {
+    background-color: #333333;
+    color: white;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+/* Una vez finalizada las reglas de CSS para main continuamos con el footer, donde aplicamos un text-align para centrar el texto y un flex space-between para colocar las dos cajas de GIF a los dos lados de footer. */
+footer div {
+    width: 30%;
+}
+/* Ahora aplicamos el tamamño a las 2 cajas de GIF. */
+#Text-Index-h1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+/* Ya hecho el CSS para la estructura de las páginas vamos con los CSS para el contenido de las páginas. Primero vamos con el encabezado de Todas las páginas. */
+#Text-Index {
+    color: white;
+    text-align: justify;
+    font-size: larger;
+}
+/* Ahora vamos con el texto de la página de Index, que lo hacemos en justify y larger. */
+.EC-Index {
+    column-count: 1;
+}
+/* Ahora aplicamos cambios al <div> que hemos puesto para crear un efcto cascada en el texto del html. */
+.cascada-I {
+    break-inside: avoid-column;
+    background-color: transparent;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+/* Y ahora hacemos el cambio la columna asignada para crear el efecto cascada. */
+.EC-About {
+    column-count: 1;
+}
+/* Ahore seguimos con About, al cual le haremos el mismo efecto. */
+.cascada-A {
+    break-inside: avoid-column;
+    background-color: transparent;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+/* Por último, haceos el mismo estilo de cascada en el texto de About. */
+#Text-About-h1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+/* Ahora vamos con el texto de la página de About, entonces vamos aplicar el mismo tipo de texto de Index, pero en About. */
+#Text-About {
+    color: white;
+    text-align: justify;
+    font-size: larger;
+}
+/* Por último ponemos el mismo estilo de texto de Text-Index para la página de About. Y así, terminanmos con la página de About. */
+#Text-History-h1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+/* Ahora vamos a aplicar los mismo para la página de History. Primero vamos en el encabezado. */
+#Text-History {
+    color: white;
+    text-align: justify;
+    font-size: larger;
+}
+/* Después añadiremos el estilo para el texto sobre History. */
+#Text-Photos-h1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+/* Para la página de Photos solo voy a necesitar el estilo de texto para el encabezado. */
+.P-Photos {
+    width: 300px;
+    height: 180px;
+    image-rendering: optimizeSpeed;
+}
+/* Después he utlizado este estilo de imagen para editar el ancho y alto de las 4 imagenes, además he puesto que priorize la velocidad de carga. */
+#Text-Walkthrough-h1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+/* Para la página de Walkthrough (o Playthrough) solo añado una regla de CSS para el texto de encabezado. */
+.Icons-RS {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Antes de seguir con el contenido vamos con la configuración del bloque de links, en el cual lo haremos para asemejarse al  que tenemos en el <nav> del <header> pero sin los botones falso, es decir que sea una lista horizontal. */
+.Icons-RS li {
+    margin-right: 12px;
+    flex: 1;
+    margin-bottom: 12px;
+    margin-top: 4px;
+    margin-left: 80px;
+}
+/* Ahora aplicamos casi los mismos cambios al li para, como digo, se cloque una lista en horizontal. */
+.Icons-RS img {
+    width: 40px;
+    height: 60px;
+}
+/* Por último hacemos el ajuste de tamaño a los iconos de las diferentes redes sociales. */
+#C-H1 {
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+/* Ahora vamos con las segunda página, que será la de contact. Primero hacemos los cambios para el encabezado de la página. */
+#AD {
+    text-align: center;
+    font-size: medium;
+    flex: content;
+    color: white;
+}
+/* Ahora vamos con el contenido de los <address> de la página. */
+.CIFP {
+    width: 200px;
+    height: 80px;
+    image-rendering: optimizeSpeed;
+}
+/* Pero ahora vamos con el ajuste de la imagen que tenemos en Contact. Además he priorizado la velocidad de carga a la calidad de imagen. */
