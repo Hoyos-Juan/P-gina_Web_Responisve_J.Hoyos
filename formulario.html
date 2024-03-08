@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>PTD FanPage-Formulario</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estils.css">
+</head>
+<body id="fuente-pagina">
+        <header>
+            <div id="fondo-logo-Index">
+                <a href="Index.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')"><img src="Multimedia/Logo-PTD.png" alt="Logo de la página y link para ir a la página principal (Index)."></a>
+            </div>
+        </header>
+    <!-- La página de formulario.html sigue las mismas pautas que el index.html pero en el <main> tenemos el <form> para el formulario. -->    
+    <main>
+        <div class="main-gif">
+            <img src="Fondo-Pantalla/Principal/Ilex-Forest.gif" alt="GIF de fondo para la página de Index.">
+        <div class="main-overlay"></div>
+        </div>
+        <div class="main-contenido">
+            
+                <div class="cascada-I">
+                    <form id="miFormulario">
+                        <label class="textForm" for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label class="textForm" for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                
+                        <label class="textForm" for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <label class="textForm" for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                
+                        <button type="submit">Enviar</button>
+                    </form>  
+            </div>
+        </div>       
+    </main>
+                    <!-- En este <form> tenemos <label> con sus respectivos <input> y un <button> para registrar un nombre, un usuario, y un correo. -->
+    <aside>
+        <h3 class="pequeño">Cambia el color del Encabezado</h3>
+            <button onclick="cambioEncabezado()">Cambio</button>
+    </aside>
+        <script src="Scripts.js"></script>
+    <footer class="foot-edit">
+            <div class="footer-gif">
+                <img src="Gif-Páginas/Bulbasaur_NB.gif" alt="GIF 1 (Bulbasaur) de Index.">
+            </div>
+        <p>Los derechos de Pokémon son propiedad de The Pokémon Company®.</p>
+        <p>Esta página se crea con fines educativos y de aprendizaje en un curso de informática. No busca rentabilidad ni apropiación de la marca Pokémon.</p>
+        <p>&copy; 2023 Pokemón Tower Defense Fan-Page. Todos los derechos reservados.</p>
+        <p>Si disfrutas de Pokémon, te animamos a apoyar la marca comprando productos oficiales distribuidos por entidades autorizadas, como Nintendo® y sus colaboradores.</p>
+        <p>Todos los Sprites son de los juegos en Nintendo®, no son para promocionar sino para honrar la saga de videojuegos.</p>
+            <div class="footer-gif">
+                <img src="Gif-Páginas/Charmander_NB.gif" alt="GIF 2 (Charmander) de Index.">
+            </div>
+    </footer>
+    
+</body>
+</html>

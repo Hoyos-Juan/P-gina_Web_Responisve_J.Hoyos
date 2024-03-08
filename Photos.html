@@ -9,55 +9,64 @@
 <!-- Después tenemos el comienzo de la página con <body>, al que le ponemos un atributo de id para seleccionar la fuente en el css. -->    
     <header>
         <div id="fondo-logo-Photos">
-            <a href="Index.html" target="_self"><img src="Multimedia/Logo-PTD.png" alt="Logo de la pàgina i accés per anar a la pàgina principal."></a>
+            <a href="Index.html" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_self"><img src="Multimedia/Logo-PTD.png" alt="Logo de la pàgina i accés per anar a la pàgina principal."></a>
         </div>
-<!-- Acto seguido poneos el <header> de nuestra página. Aquí he decidido de separarlo en 2 <div>. El primero sirve para tener el logo y su color de fondo.
-El logo contiene un <img> y <a> para crear un enlace hacia la página principal. Para el fondo utilizaremos un atributo id en el <div> y con ello haremos el css para su respectivo color (ya que para cada
-página tendrá su respectivo color). -->
+    <!-- Acto seguido poneos el <header> de nuestra página. Aquí he decidido de separarlo en 2 <div>. El primero sirve para tener el logo y su color de fondo.
+    El logo contiene un <img> y <a> para crear un enlace hacia la página principal. Para el fondo utilizaremos un atributo id en el <div> y con ello haremos el css para su respectivo color (ya que para cada
+    página tendrá su respectivo color). -->
         <div id="fondo-nav">
             <nav>
                 <ul class="press2P">
-                    <li><a class="index" href="Index.html" target="_self">Índice</a></li>
-                    <li><a class="history" href="History.html" target="_self">Historia</a></li>
-                    <li><a class="about" href="About.html" target="_self">Sobre</a></li>
-                    <li><a class="playthrough" href="Playthrough.html" target="_self">Walkthrough</a></li>
-                    <li><a class="contact" href="Contact.html" target="_self">Contacto</a></li>
+                    <li><a class="index" href="Index.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Índice</a></li>
+                    <li><a class="history" href="History.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Historia</a></li>
+                    <li><a class="about" href="About.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Sobre</a></li>
+                    <li><a class="playthrough" href="Playthrough.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Walkthrough</a></li>
+                    <li><a class="contact" href="Contact.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-<!-- El segundo <div> es el que contiene el <nav> con su <ul> y sus respectivos <li> y <a>. Después he decidido añadir un atributo class tanto en el <ul> como en los <a>. El class de <ul> permite cambiar
-la fuente de texto de los <li> del <nav>, sin afectar al resto de la página. Los class para los <a> son para, mediante css, crear falsos botones que hacen link hacia las otras páginas. -->
+        <!-- El segundo <div> es el que contiene el <nav> con su <ul> y sus respectivos <li> y <a>. Después he decidido añadir un atributo class tanto en el <ul> como en los <a>. El class de <ul> permite cambiar
+        la fuente de texto de los <li> del <nav>, sin afectar al resto de la página. Los class para los <a> son para, mediante css, crear falsos botones que hacen link hacia las otras páginas. -->
     <main>
         <div class="main-gif">
             <img src="Fondo-Pantalla/Principal/fondo-alter.webp" alt="Imagen estática para el fondo de Photos.">
         <div class="main-overlay"></div>
-<!-- En el primer <div> tenemos un <img> para el fondo de pantalla de la página. -->
+        <!-- En el primer <div> tenemos un <img> para el fondo de pantalla de la página. -->
         </div>
-<!-- Este segundo <div> es para dar el efecto de overlay al fondo. Este proceso se hace en el css de la página. -->
+        <!-- Este segundo <div> es para dar el efecto de overlay al fondo. Este proceso se hace en el css de la página. -->
         <div class="main-contenido">
             <h1 id="Text-Photos-h1">Fotos</h1>
-                <img class="P-Photos" src="Multimedia/Imagenes-Juego/PTD-Foto-1.png" alt="1ª Foto del Juego (Pantalla de Inicio)">
-                <img class="P-Photos" src="Multimedia/Imagenes-Juego/PTD-Foto-2.png" alt="2ª Foto del Juego (Menú Principal)">
-                <img class="P-Photos" src="Multimedia/Imagenes-Juego/PTD-Foto-3.png" alt="3ª Foto del Juego (Pokedex del Juego)">
-                <img class="P-Photos" src="Multimedia/Imagenes-Juego/PTD-Foto-4.png" alt="4ª Foto del Juego (Selector de Nivel)">
+                <img class="P-Photos" onclick="mostrarImagen(this)" src="Multimedia/Imagenes-Juego/PTD-Foto-1.png" alt="1ª Foto del Juego (Pantalla de Inicio)">
+                <img class="P-Photos" onclick="mostrarImagen(this)" src="Multimedia/Imagenes-Juego/PTD-Foto-2.png" alt="2ª Foto del Juego (Menú Principal)">
+                <img class="P-Photos" onclick="mostrarImagen(this)" src="Multimedia/Imagenes-Juego/PTD-Foto-3.png" alt="3ª Foto del Juego (Pokedex del Juego)">
+                <img class="P-Photos" onclick="mostrarImagen(this)" src="Multimedia/Imagenes-Juego/PTD-Foto-4.png" alt="4ª Foto del Juego (Selector de Nivel)">
         </div>
             
-<!-- Aquí en el contenido de Photos, aparte de tampoco hacer el efecto cascada en la página, he puesto dentro del <div> 4 <img> con atributo class para aplicar CSS. -->
+        <!-- Aquí en el contenido de Photos, aparte de tampoco hacer el efecto cascada en la página, he puesto dentro del <div> 4 <img> con atributo class para aplicar CSS. -->
         <div class="main-links">
             <h3>Redes Sociales</h3>
                 <ul class="Icons-RS">
-                    <li><a href="https://www.youtube.com/@pokemon" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Youtube.png" alt="Icono de YouTube">YouTube</a></li>
-                    <li><a href="https://discord.com/invite/pokemon" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Discord.png" alt="Icono de Discord">Discord</a></li>
-                    <li><a href="https://twitter.com/Pokemon" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Twitter.png" alt="Icono de Twitter">Twitter/X</a></li>
-                    <li><a href="https://www.instagram.com/pokemon/" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Instagram.png" alt="Icono de Instagram">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@pokemon" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Youtube.png" alt="Icono de YouTube">YouTube</a></li>
+                    <li><a href="https://discord.com/invite/pokemon" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Discord.png" alt="Icono de Discord">Discord</a></li>
+                    <li><a href="https://twitter.com/Pokemon" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Twitter.png" alt="Icono de Twitter">Twitter/X</a></li>
+                    <li><a href="https://www.instagram.com/pokemon/" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Instagram.png" alt="Icono de Instagram">Instagram</a></li>
                 </ul>
         </div>
-<!-- Por último tenemos el <div> de main-links, donde tenemos un <h3>, un <ul> con <li>, <a> (los enlaces son hacia las oficiales de Pokémon) y <img>
-(Iconos de las diferentes R.R.S.S) que enlazan con los textos de las diferentes R.R.S.S. oficiales de Pokémon. -->
+        <!-- Por último tenemos el <div> de main-links, donde tenemos un <h3>, un <ul> con <li>, <a> (los enlaces son hacia las oficiales de Pokémon) y <img>
+        (Iconos de las diferentes R.R.S.S) que enlazan con los textos de las diferentes R.R.S.S. oficiales de Pokémon. -->
     </main>
-<!-- Una vez terminamos con el <main>, seguimos con el <footer>. Aqui he decido hacer 2 <div> que se colocan a los 2 lados de la caja <footer>
-y en el medio tenemos el texto con la aclaración de que la página no tiene el objetivo de lucrase sino que es para mi FP DUAL. -->
+    <aside>
+        <h3 class="pequeño">Registrate a nuestra comunidad</h3>
+            <button onclick="location.href='formulario.html'" target="_blank">Registrate</button>
+        <br>
+        <h3 class="pequeño">Valoranos!</h3>
+            <button onclick="iniciarEncuesta()">Valorar</button>
+                <div id="mensaje"></div>
+    </aside>
+        <script src="Scripts.js"></script>
+    <!-- Una vez terminamos con el <main>, seguimos con el <footer>. Aqui he decido hacer 2 <div> que se colocan a los 2 lados de la caja <footer>
+    y en el medio tenemos el texto con la aclaración de que la página no tiene el objetivo de lucrase sino que es para mi FP DUAL. -->
 <footer class="foot-edit">
         <div class="footer-gif">
             <img src="Gif-Páginas/Meowth_NB.gif" alt="GIF 7 (Meowth) de Photos.">
@@ -71,8 +80,8 @@ y en el medio tenemos el texto con la aclaración de que la página no tiene el 
             <img src="Gif-Páginas/Geodude_NB.gif" alt="GIF 8 (Geodude) de Photos.">
         </div>
 </footer>
-<!-- Por la parte de los 2 <div> añadimos el atributo class y la etiqueta <img> (Por cierto todos los <img> contiene el atributo alt donde se
-informa sobre la imagen colocada). En el <img> añadimos los GIF para dar un toque más animado a la página. -->
+        <!-- Por la parte de los 2 <div> añadimos el atributo class y la etiqueta <img> (Por cierto todos los <img> contiene el atributo alt donde se
+        informa sobre la imagen colocada). En el <img> añadimos los GIF para dar un toque más animado a la página. -->
 </body>
 </html>
 <!-- Por último, cerramos con </footer>, </body> y </html> para finalizar nuestra página que contendra casi la misma estructura en el resto de páginas. -->

@@ -62,3 +62,82 @@ Este es el README de la Página Web Responsive. Hecho por Juan David Hoyos Quiñ
 
 5. **[Captura 5](Capturas-de-Pantalla-Web/Captura-Pantalla-5.png)**
    - Descripción: Finalmente, la captura 5 presenta [Como los GIF de Pokémon cambia dependiendo de la página seleccionada].
+
+# Modificaciones HTML en la Web
+
+Antes de ir a la parte de JavaScript, debo decir que he añadido un <aside> en la página web.
+
+1. **[Captura 6](Capturas-de-Pantalla-Web/Captura-Aside.png)**
+
+Este <aside> esta incluido en todos los html de la web, excepto en el del formulario (formulario.html)
+
+# JavaScript Funciones
+
+Ahora procedo a decir todas las funciones que he utilizado para la web.
+
+## General
+
+Para todas las páginas (excepto formulario.html), he añadido al aside 2 funciones en dos botones.
+
+### Funciones Aside
+
+El aside, como se ha dicho antes, contiene 2 botones. El primero es para poder acceder al formulario (formulario.html). Se hace por un onclick=location.href en button y su validación es básica.
+
+1. **[Captura 7](Capturas-de-Pantalla-Web/Captura-Formulario.png)**
+
+Luego esta el segundo botón, hace la función de la encuesta
+
+2. **[Caprura 8](Capturas-de-Pantalla-Web/Captura-Encuesta.png)**
+
+Al pulsar sobre la imagen, comienza una encuesta general sobre la página web
+
+3. **[Captura 9](Capturas-de-Pantalla-Web/Captura-Encuesta-Funcionamiento-1.png)**
+
+Al finalizar la encuesta, se crea un mensaje debajo del botón que contiene las respuestas a la encuesta
+
+4. **[Captura 10](Capturas-de-Pantalla-Web/Captura-Encuesta-Funcionamiento-2.png)**
+
+### Atributo Onclick
+
+Seguimos con los atributos Onclick, que es un atributo html, que he añadido la confirmación a ir a los enlaces que hay
+
+1. **[Captura 11](Capturas-de-Pantalla-Web/Captura-Onclick.png)**
+
+Esta para acceder a las diferentes páginas
+
+2. **[Captura 12](Capturas-de-Pantalla-Web/Captura-Onclick-Funcionamiento-1.png)**
+
+En el logo del header
+
+3. **[Captura 13](Capturas-de-Pantalla-Web/Captura-Onclick-Funcionamiento-2.png)**
+
+Y para los enlaces de RRSS
+
+4. **[Captura 14](Capturas-de-Pantalla-Web/Captura-Onclick-Funcionamiento-3.png)**
+
+## Formulario
+
+Para la página del formulario (formulario.html), tengo un formualrio (form)
+
+1. **[Captura 15](Capturas-de-Pantalla-Web/Captura-Formulario.png)**
+
+Y en el aside, no esta las otras 2 funciones, en este aside hay una tercera función que permite cambiar el color de fondo (backgroundColor) del header.
+
+2. **[Captura 16](Capturas-de-Pantalla-Web/Captura-Cambio-Estilo.png)**
+
+Al puslsar sobre el botón cambiara el color de fondo del header a cualquiera de las otras páginas.
+
+Antes:
+
+3. **[Captura 17](Capturas-de-Pantalla-Web/Captura-Funcionamiento-1.png)**
+
+Despues:
+
+4. **[Captura 18](Capturas-de-Pantalla-Web/Captura-Funcionamiento-2.png)**
+
+## Imagen
+
+Por último he hecho una función en Photos.html, que permite visualizar la imagen a su tamaño real. Solamente debemos pulsar sobra la imagen.
+1. **[Captura 19](Capturas-de-Pantalla-Web/Captura-Imagen.png)**
+Y se abrirá, en otra pestaña, se verá la imagen en el tamño real.
+2. **[Captura 20](Capturas-de-Pantalla-Web/Captura-Imagen-Funcionamiento.png)**

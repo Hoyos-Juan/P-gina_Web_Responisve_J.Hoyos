@@ -351,3 +351,38 @@ footer div {
     image-rendering: optimizeSpeed;
 }
 /* Pero ahora vamos con el ajuste de la imagen que tenemos en Contact. Además he priorizado la velocidad de carga a la calidad de imagen. */
+aside {
+    background-color: grey;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+/* Ahora en el CSS añadimos los estilos al aside */
+aside a{
+    display: block;
+    margin-top: 8px;
+}
+/* Con esto alineamos el margen con el del header y hacemos que el enlace no se mueva. */
+.pequeño{
+    color: whitesmoke;
+    font-size: x-small;
+    text-align: center;
+}
+/* Estilizamos el texto de <aside>. */
+.textForm{
+    color: whitesmoke;
+    font-size: medium;
+    text-align: center;
+    display: flex;
+}
+/* Estilizamos el texto de la página formulario.html */
+#mensaje{
+    color: whitesmoke;
+    font-size: x-small;
+    text-align: center;
+    display: flex;
+}
+/* Estilizamos el texto del mensaje que nos sale al finalizar la encuesta. */

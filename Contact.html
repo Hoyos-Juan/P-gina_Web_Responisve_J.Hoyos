@@ -9,7 +9,7 @@
 <!-- Después tenemos el comienzo de la página con <body>, al que le ponemos un atributo de id para seleccionar la fuente en el css. -->
     <header>
         <div id="fondo-logo-Contact">
-            <a href="Index.html" target="_self"><img src="Multimedia/Logo-PTD.png" alt="Logo de la página y link para ir a la página principal (Index)."></a>
+            <a href="Index.html" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_self"><img src="Multimedia/Logo-PTD.png" alt="Logo de la página y link para ir a la página principal (Index)."></a>
         </div>
 <!-- Acto seguido poneos el <header> de nuestra página. Aquí he decidido de separarlo en 2 <div>. El primero sirve para tener el logo y su color de fondo.
 El logo contiene un <img> y <a> para crear un enlace hacia la página principal. Para el fondo utilizaremos un atributo id en el <div> y con ello haremos el css para su respectivo color (ya que para cada
@@ -17,11 +17,11 @@ página tendrá su respectivo color). -->
         <div id="fondo-nav">
             <nav>
                 <ul class="press2P">
-                    <li><a class="index" href="Index.html" target="_self">Índice</a></li>
-                    <li><a class="history" href="History.html" target="_self">Historia</a></li>
-                    <li><a class="about" href="About.html" target="_self">Sobre</a></li>
-                    <li><a class="photos" href="Photos.html" target="_self">Fotos</a></li>
-                    <li><a class="playthrough" href="Playthrough.html" target="_self">Walkthrough</a></li>
+                    <li><a class="index" href="Index.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Índice</a></li>
+                    <li><a class="history" href="History.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Historia</a></li>
+                    <li><a class="about" href="About.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Sobre</a></li>
+                    <li><a class="photos" href="Photos.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Fotos</a></li>
+                    <li><a class="playthrough" href="Playthrough.html" target="_self" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')">Walkthrough</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,7 +30,7 @@ página tendrá su respectivo color). -->
 la fuente de texto de los <li> del <nav>, sin afectar al resto de la página. Los class para los <a> son para, mediante css, crear falsos botones que hacen link hacia las otras páginas. -->
     <main>
         <div class="main-gif">
-            <img src="Fondo-Pantalla/Principal/fondo-alter.webp" alt="Imagen estática para el fondo de Contact.">
+            <img src="Fondo-Pantalla/Principal/fondo-alter.webp"  alt="Imagen estática para el fondo de Contact.">
         <div class="main-overlay"></div>
 <!-- En el primer <div> tenemos un <img> para el fondo de pantalla de la página. -->
         </div>
@@ -41,21 +41,30 @@ la fuente de texto de los <li> del <nav>, sin afectar al resto de la página. Lo
                     <address id="AD">Email: jhoyos@cifpfbmoll.eu</address>
                     <address id="AD">Curs: ASIX Intensiva 2023-2024</address>
                     <address id="AD">Centre d'Estudis: CIFP Francesc de Borja Moll</address>
-                <a href="https://www.cifpfbmoll.eu/" target="_blank"><img class="CIFP" src="Multimedia/CIFP-FB-Logo.png" alt="Logo del CIFP Francesc de Borja Moll."></a>
+                <a href="https://www.cifpfbmoll.eu/" target="_blank" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')"><img class="CIFP" src="Multimedia/CIFP-FB-Logo.png" alt="Logo del CIFP Francesc de Borja Moll."></a>
         </div>
 <!-- Aquí, en este main-contenido de la página Contact.html, tenemos un <h1> con 4 <address> para informar quien es el creador de la página. -->
         <div class="main-links">
             <h3>Redes Sociales</h3>
                 <ul class="Icons-RS">
-                    <li><a href="https://www.youtube.com/@pokemon" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Youtube.png" alt="Icono de YouTube">YouTube</a></li>
-                    <li><a href="https://discord.com/invite/pokemon" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Discord.png" alt="Icono de Discord">Discord</a></li>
-                    <li><a href="https://twitter.com/Pokemon" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Twitter.png" alt="Icono de Twitter">Twitter/X</a></li>
-                    <li><a href="https://www.instagram.com/pokemon/" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Instagram.png" alt="Icono de Instagram">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@pokemon" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Youtube.png" alt="Icono de YouTube">YouTube</a></li>
+                    <li><a href="https://discord.com/invite/pokemon" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Discord.png" alt="Icono de Discord">Discord</a></li>
+                    <li><a href="https://twitter.com/Pokemon" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Twitter.png" alt="Icono de Twitter">Twitter/X</a></li>
+                    <li><a href="https://www.instagram.com/pokemon/" onclick="return confirm('¿Estás seguro de que deseas seguir al enlace?')" target="_blank"><img src="Multimedia/Logos Enlaces/Icono-Instagram.png" alt="Icono de Instagram">Instagram</a></li>
                 </ul>
         </div>
 <!-- Por último tenemos el <div> de main-links, donde tenemos un <h3>, un <ul> con <li>, <a> (los enlaces son hacia las oficiales de Pokémon) y <img>
 (Iconos de las diferentes R.R.S.S) que enlazan con los textos de las diferentes R.R.S.S. oficiales de Pokémon. -->
     </main>
+    <aside>
+        <h3 class="pequeño">Registrate a nuestra comunidad</h3>
+            <button onclick="location.href='formulario.html'" target="_blank">Registrate</button>
+        <br>
+        <h3 class="pequeño">Valoranos!</h3>
+            <button onclick="iniciarEncuesta()">Valorar</button>
+                <div id="mensaje"></div>
+    </aside>
+        <script src="Scripts.js"></script>
 <!-- Una vez terminamos con el <main>, seguimos con el <footer>. Aqui he decido hacer 2 <div> que se colocan a los 2 lados de la caja <footer>
 y en el medio tenemos el texto con la aclaración de que la página no tiene el objetivo de lucrase sino que es para mi FP DUAL. -->
 <footer class="foot-edit">
